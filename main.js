@@ -20,8 +20,7 @@ function createWindow() {
   });
 
   win.setMenuBarVisibility(false);
-  win.loadFile("frontend/dist/index.html");
-  win.webContents.openDevTools(); // Optional: disable for production
+  win.loadFile("frontend/dist/index.html")
 }
 
 app.whenReady().then(createWindow);
