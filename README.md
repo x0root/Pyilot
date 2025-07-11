@@ -9,6 +9,7 @@
 ![Made with React](https://img.shields.io/badge/Frontend-React-61dafb.svg?logo=react)
 ![Python Backend](https://img.shields.io/badge/Backend-Python-3776ab.svg?logo=python)
 ![Gemini API](https://img.shields.io/badge/AI-Gemini%20API-blueviolet.svg?logo=google)
+![Tested on Windows 11](https://img.shields.io/badge/Tested%20on-Windows%2011-blue?logo=windows)
 
 
 
