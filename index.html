@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pyilot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside id="sidebar">
+      <button id="newChat">+ New Chat</button>
+      <div class="sidebar-scroll">
+        <ul id="chatHistory"></ul>
+      </div>
+    </aside>
+
+    <main>
+      <div id="chatBox"></div>
+      <div class="input-area">
+        <textarea id="userInput" placeholder="Ask something..."></textarea>
+        <button id="send">➤</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="renderer.js"></script>
+  <script>
+    const inputBox = document.getElementById("userInput");
+    const sidebar = document.getElementById("sidebar");
+
+    let historyIndex = -1;
+    let userInputs = [];
+
+    document.addEventListener("keydown", (e) => {
+      const isInputFocused = document.activeElement === inputBox;
+
+      // Shift+Enter = newline | Enter = send
+      if (isInputFocused && e.key === "Enter") {
+        if (e.shiftKey) return;
+        e.preventDefault();
+        document.getElementById("send").click();
+      }
+
+      // Ctrl+N = New Chat
+      if (e.ctrlKey && e.key.toLowerCase() === "n") {
+        e.preventDefault();
+        document.getElementById("newChat").click();
+      }
+
+      // Ctrl+K = focus input box
+      if (e.ctrlKey && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        inputBox.focus();
+      }
+
+      // Ctrl+H = toggle sidebar
+      if (e.ctrlKey && e.key.toLowerCase() === "h") {
+        e.preventDefault();
+        sidebar.style.display = (sidebar.style.display === "none") ? "block" : "none";
+      }
+
+      // Ctrl+ArrowUp = Previous input
+      if (isInputFocused && e.ctrlKey && e.key === "ArrowUp") {
+        e.preventDefault();
+        if (userInputs.length > 0 && historyIndex < userInputs.length - 1) {
+          historyIndex++;
+          inputBox.value = userInputs[userInputs.length - 1 - historyIndex];
+        }
+      }
+
+      // Ctrl+ArrowDown = Next input
+      if (isInputFocused && e.ctrlKey && e.key === "ArrowDown") {
+        e.preventDefault();
+        if (historyIndex > 0) {
+          historyIndex--;
+          inputBox.value = userInputs[userInputs.length - 1 - historyIndex];
+        } else {
+          historyIndex = -1;
+          inputBox.value = "";
+        }
+      }
+
+      // Ctrl+R = Rerun last script
+      if (e.ctrlKey && e.key.toLowerCase() === "r") {
+        e.preventDefault();
+        if (typeof rerunLastScript === "function") rerunLastScript();
+      }
+    });
+
+    // Track input history
+    document.getElementById("send").addEventListener("click", () => {
+      const val = inputBox.value.trim();
+      if (val) {
+        userInputs.push(val);
+        historyIndex = -1;
+      }
+    });
+  </script>
+</body>
+</html>

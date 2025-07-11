@@ -1,0 +1,27 @@
+{
+  "name": "pyilot",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "python",
+    "AI",
+    "assistant",
+    "chatbot",
+    "desktop",
+    "pyilot"
+  ],
+  "author": "x0root",
+  "license": "MIT",
+  "description": "Pyilot – An AI-powered Python assistant that writes, runs, and manages scripts with memory, chat, and package auto-installation.",
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}

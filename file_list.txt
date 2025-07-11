@@ -1,0 +1,11 @@
+chatSessions.json: 27039 bytes
+index.html: 2978 bytes
+logs.txt: 81197 bytes
+main.js: 3651 bytes
+memory.json: 226 bytes
+package-lock.json: 31226 bytes
+package.json: 559 bytes
+preload.js: 351 bytes
+pyilotCore.js: 9165 bytes
+renderer.js: 8858 bytes
+styles.css: 1909 bytes
