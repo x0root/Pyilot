@@ -32,7 +32,7 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)
-- [ShadCN UI](https://ui.shadcn.dev/)
+- [ShadCN UI](https://ui.shadcn.com/)
 - [Python 3](https://www.python.org/) 
 - [Google Gemini API](https://aistudio.google.com/) 
 
