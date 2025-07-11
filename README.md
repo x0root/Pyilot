@@ -44,8 +44,8 @@
    ```bash
    npm install
    ```
-3. Add your Gemini API key inside renderer.js:
-   ```javascript
+3. Add your Gemini API key inside pyilotCore.js:
+   ```Typescript
    const API_KEY = "YOUR_GEMINI_API_KEY";
     ```
 4. Install dependencies:
