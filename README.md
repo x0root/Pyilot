@@ -3,7 +3,7 @@
 **Pyilot** is an AI-powered desktop assistant that turns your natural language commands into executable Python code — right on your computer. It uses **Google Gemini AI** to generate scripts, and lets you interact with your system intelligently.
 
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
-![Open Source](https://img.shields.io/badge/Open--Source-green.svg)
+![Open-Source](https://img.shields.io/badge/Open-source-green.svg)
 ![Built with Electron](https://img.shields.io/badge/Built%20with-Electron-2b2e3a.svg?logo=electron)
 ![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-3178c6.svg?logo=typescript)
 ![Made with React](https://img.shields.io/badge/Frontend-React-61dafb.svg?logo=react)
