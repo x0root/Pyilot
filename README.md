@@ -23,10 +23,14 @@
 
 ## 🛠️ Built With
 
-- [Electron](https://www.electronjs.org/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Python 3](https://www.python.org/)
-- [Google Gemini API](https://aistudio.google.com/)
+- [Electron](https://www.electronjs.org/) 
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [ShadCN UI](https://ui.shadcn.dev/)
+- [Python 3](https://www.python.org/) 
+- [Google Gemini API](https://aistudio.google.com/) 
+
 
 ---
 
