@@ -14,7 +14,6 @@
 - 🔒 Safe Mode — detects dangerous commands and asks for your permission
 - 📂 Folder Resolver — AI understands folder names like "Documents", "Downloads"
 - 🧠 Persistent memory — remembers your past prompts across sessions
-- 📜 Script logs — all AI-generated scripts are automatically saved for safety
 - 🖥️ Simple UI
 - ⚡ Run code directly from inside the app
 - ⌨️ Keyboard Shortcuts
