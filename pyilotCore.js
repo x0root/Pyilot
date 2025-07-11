@@ -2,7 +2,7 @@ const { spawn } = require("child_process");
 const fs = require("fs");
 const os = require("os");
 
-const API_KEY = "AIzaSyAy9RQYz8BJPfChq0i87IpsyVMU3CW5V4Y"; // Replace with your actual key
+const API_KEY = "YOUR-API-KEY"; // Replace with your actual key
 
 const memoryPath = "memory.json";
 const sessionPath = "chatSessions.json";
