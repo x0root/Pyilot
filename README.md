@@ -21,7 +21,7 @@
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 - [Electron](https://www.electronjs.org/) 
 - [TypeScript](https://www.typescriptlang.org/)
@@ -33,8 +33,12 @@
 
 
 ---
+## Requirements
+- Node.js v18 or later
+- Python 3 installed and available in PATH
+- Internet connection (for Gemini API)
 
-## 📦 Installation
+## Installation
 
 1. Clone this repo:
    ```bash
