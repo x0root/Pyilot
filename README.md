@@ -52,17 +52,15 @@
 2. Install dependencies:
    ```bash
    npm install
+   cd Frontend
+   npm install
+   npm install --save-dev electron
    ```
 3. Add your Gemini API key inside pyilotCore.js:
    ```Typescript
    const API_KEY = "YOUR_GEMINI_API_KEY";
     ```
-4. Install dependencies:
-   ```bash
-   npm install
-   npm install --save-dev electron
-   ```
-5. Start the app:
+4. Start the app:
    ```bash
    npm start
    ```
